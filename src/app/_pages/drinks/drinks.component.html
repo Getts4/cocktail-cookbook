@@ -1,0 +1,26 @@
+<div *ngIf="drinks" class="drinks-container">
+  <h1>
+    {{ type }}
+  </h1>
+
+  <mat-grid-list
+    [cols]="breakpoint"
+    rowHeight="410px"
+    (window:resize)="onResize($event)"
+    class="drinks-grid"
+  >
+    <mat-grid-tile *ngFor="let drink of drinks">
+      <mat-card class="drink-card">
+        <mat-card-header>
+          <mat-card-title>{{ drink.name }}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image [src]="drink.image" alt="Drink Photo" />
+        <mat-card-actions>
+          <button (click)="openDialog(drink)" mat-button color="primary">
+            VIEW RECIPE
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

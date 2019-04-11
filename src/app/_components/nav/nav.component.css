@@ -1,0 +1,19 @@
+.nav {
+  color: #ffffff;
+  background: #1c1c1f !important;
+}
+
+.nav img {
+  height: 30px;
+}
+@media screen and (min-width: 600px) {
+  .nav img {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav img {
+    height: 20px;
+  }
+}

@@ -1,0 +1,10 @@
+<mat-toolbar class="nav">
+  <button
+    (click)="backClicked()"
+    mat-icon-button
+    *ngIf="router.url !== '/landing'"
+  >
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+  <img src="../../../assets/images/logo.svg" alt="Cocktail Cookbook Logo" />
+</mat-toolbar>
