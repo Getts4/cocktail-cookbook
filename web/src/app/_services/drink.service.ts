@@ -41,19 +41,15 @@ export class DrinkService {
   rumDrinks: Drink[] = new Array();
   tequilaDrinks: Drink[] = new Array();  
 
-  delay(ms: number) {
-    return new Promise( resolve => setTimeout(resolve, ms) );
-  }
-
   getDrinks(type: string): Drink[] {
     console.log(`Fetching data for ${type}...`);
 
-    
-
     if (type === 'vodka') {
-      for (let index = 0; index < this.drinks.length; index++) {
-        if (this.drinks[index].type === 'vodka') {
-          this.vodkaDrinks.push(this.drinks[index]);
+      if (this.vodkaDrinks.length === 0) {
+        for (let index = 0; index < this.drinks.length; index++) {
+          if (this.drinks[index].type === 'vodka') {
+            this.vodkaDrinks.push(this.drinks[index]);
+          }
         }
       }
       console.log(this.vodkaDrinks);
@@ -61,9 +57,11 @@ export class DrinkService {
     }
 
     if (type === 'whiskey') {
-      for (let index = 0; index < this.drinks.length; index++) {
-        if (this.drinks[index].type === 'whiskey') {
-          this.whiskeyDrinks.push(this.drinks[index]);
+      if (this.whiskeyDrinks.length === 0) {
+        for (let index = 0; index < this.drinks.length; index++) {
+          if (this.drinks[index].type === 'whiskey') {
+            this.whiskeyDrinks.push(this.drinks[index]);
+          }
         }
       }
       console.log(this.whiskeyDrinks);
@@ -71,9 +69,11 @@ export class DrinkService {
     }
 
     if (type === 'rum') {
-      for (let index = 0; index < this.drinks.length; index++) {
-        if (this.drinks[index].type === 'rum') {
-          this.rumDrinks.push(this.drinks[index]);
+      if (this.rumDrinks.length === 0) {
+        for (let index = 0; index < this.drinks.length; index++) {
+          if (this.drinks[index].type === 'rum') {
+            this.rumDrinks.push(this.drinks[index]);
+          }
         }
       }
       console.log(this.rumDrinks);
@@ -81,9 +81,11 @@ export class DrinkService {
     }
 
     if (type === 'tequila') {
-      for (let index = 0; index < this.drinks.length; index++) {
-        if (this.drinks[index].type === 'tequila') {
-          this.tequilaDrinks.push(this.drinks[index]);
+      if (this.tequilaDrinks.length === 0) {
+        for (let index = 0; index < this.drinks.length; index++) {
+          if (this.drinks[index].type === 'tequila') {
+            this.tequilaDrinks.push(this.drinks[index]);
+          }
         }
       }
       console.log(this.tequilaDrinks);

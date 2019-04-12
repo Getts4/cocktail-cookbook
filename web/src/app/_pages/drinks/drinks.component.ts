@@ -5,7 +5,6 @@ import { ActivatedRoute } from "@angular/router";
 import { DrinkComponent } from "../../_components/drink/drink.component";
 import { Drink } from "../../_models/drink.model";
 import { DrinkService } from "../../_services/drink.service";
-import { delay } from 'rxjs/operators';
 
 @Component({
   selector: "app-drinks",
