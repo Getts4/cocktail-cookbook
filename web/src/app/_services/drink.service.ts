@@ -14,8 +14,7 @@ export class DrinkService {
    */
   getDrinks(type: string): Drink[] {
     console.log(`Fetching data for ${type}...`);
-    // if (type === 'vodka') {}
-
+    if (type === 'vodka') {
     return [
       {
         name: "Vodka Cranberry",
@@ -36,5 +35,14 @@ export class DrinkService {
         image: "http://www.ketelone.com/media/1184/ketel-one-fizz-v2.jpg"
       }
     ];
+  }
+  if (type === 'whiskey') {
+    return [
+      {
+    name: "whiskey",
+    image: ""
+      }
+    ]
+  }
   }
 }
