@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace CocktailCookbook.Api.Data
 {
-    public class DrinksContext : IdentityDbContext<ApplicationUser>
+    public class DrinksContext : DbContext
     {
         public DrinksContext(DbContextOptions<DrinksContext> options)
             : base(options)

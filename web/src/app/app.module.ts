@@ -16,6 +16,7 @@ import { LandingComponent } from "./_pages/landing/landing.component";
 import { NavComponent } from "./_components/nav/nav.component";
 import { DrinksComponent } from "./_pages/drinks/drinks.component";
 import { DrinkComponent } from "./_components/drink/drink.component";
+import { HttpClientModule } from '@angular/common/http'; 
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { DrinkComponent } from "./_components/drink/drink.component";
     MatDialogModule,
     MatGridListModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    HttpClientModule
   ],
   entryComponents: [DrinkComponent],
   providers: [],

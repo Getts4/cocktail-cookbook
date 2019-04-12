@@ -1,48 +1,93 @@
 import { Injectable } from "@angular/core";
-
 import { Drink } from "../_models/drink.model";
+import { Observable, of } from 'rxjs';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { catchError, map, tap } from 'rxjs/operators';
 
 @Injectable({
   providedIn: "root"
 })
 export class DrinkService {
-  constructor() {}
-
+  constructor(
+    private http: HttpClient
+    ){}
   /**
    * Get all the drinks for a specific liquor
    * @param {string} type - Liquor type for which we want drink list
    */
+
+  private drinksUrl = 'https://localhost:5001/api/drinks';
+  private handleError<T>(operation = 'operation', result?: T) {
+    return (error: any): Observable<T> => {
+      console.error('${operation} failed: ${error.message}');
+      return of(result as T);
+    };
+  }
+
+  getDbDrinks() {
+    return this.http.get<Drink[]>(this.drinksUrl).pipe(
+      tap(_ => console.log('fetched drinks')),
+      catchError(this.handleError<Drink[]>('getDrinks', []))
+    );
+  }
+
+  getArray() {
+    this.getDbDrinks().subscribe(drinks => this.drinks = drinks);
+  }
+
+  drinks: Drink[] = new Array();
+  vodkaDrinks: Drink[] = new Array();
+  whiskeyDrinks: Drink[] = new Array();
+  rumDrinks: Drink[] = new Array();
+  tequilaDrinks: Drink[] = new Array();  
+
+  delay(ms: number) {
+    return new Promise( resolve => setTimeout(resolve, ms) );
+  }
+
   getDrinks(type: string): Drink[] {
     console.log(`Fetching data for ${type}...`);
+
+    
+
     if (type === 'vodka') {
-    return [
-      {
-        name: "Vodka Cranberry",
-        image:
-          "https://dinnersdishesanddesserts.com/wp-content/uploads/2017/12/Cranberry-Vodka-with-Lime-2-square.jpg"
-      },
-      {
-        name: "Vodka Soda",
-        image: "http://www.ketelone.com/media/1184/ketel-one-fizz-v2.jpg"
-      },
-      {
-        name: "Vodka Cranberry",
-        image:
-          "https://dinnersdishesanddesserts.com/wp-content/uploads/2017/12/Cranberry-Vodka-with-Lime-2-square.jpg"
-      },
-      {
-        name: "Vodka Soda",
-        image: "http://www.ketelone.com/media/1184/ketel-one-fizz-v2.jpg"
+      for (let index = 0; index < this.drinks.length; index++) {
+        if (this.drinks[index].type === 'vodka') {
+          this.vodkaDrinks.push(this.drinks[index]);
+        }
       }
-    ];
-  }
-  if (type === 'whiskey') {
-    return [
-      {
-    name: "whiskey",
-    image: ""
+      console.log(this.vodkaDrinks);
+      return this.vodkaDrinks;
+    }
+
+    if (type === 'whiskey') {
+      for (let index = 0; index < this.drinks.length; index++) {
+        if (this.drinks[index].type === 'whiskey') {
+          this.whiskeyDrinks.push(this.drinks[index]);
+        }
       }
-    ]
-  }
+      console.log(this.whiskeyDrinks);
+      return this.whiskeyDrinks;
+    }
+
+    if (type === 'rum') {
+      for (let index = 0; index < this.drinks.length; index++) {
+        if (this.drinks[index].type === 'rum') {
+          this.rumDrinks.push(this.drinks[index]);
+        }
+      }
+      console.log(this.rumDrinks);
+      return this.rumDrinks;
+    }
+
+    if (type === 'tequila') {
+      for (let index = 0; index < this.drinks.length; index++) {
+        if (this.drinks[index].type === 'tequila') {
+          this.tequilaDrinks.push(this.drinks[index]);
+        }
+      }
+      console.log(this.tequilaDrinks);
+      return this.tequilaDrinks;
+    }
   }
 }
