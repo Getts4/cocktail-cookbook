@@ -124,7 +124,7 @@ namespace CocktailCookDrinks.Api.Controllers
  });
                 this
                 .db.Drinks.Add(new Drinks() {name = "Tropic Bowl", type = "rum", image = 
-                    "HTTPS://HIPS.HEARSTAPPS.COM/TOC.H-CDN.CO/ASSETS/16/33/TROPIC-BOWL2_1.JPG?CROP=0.447XW:1.00XH;0.401XW,0&RESIZE=980:*",
+                    "https://hips.hearstapps.com/toc.h-cdn.co/assets/16/33/tropic-bowl2_1.jpg?crop=0.447xw:1.00xh;0.401xw,0&resize=*:2136",
                 recipe = "Ingredients:"+ Environment.NewLine +
                     "1.5 oz Banks 5 Rum"+ Environment.NewLine +
                     ".75 oz spiced pineapple syrup"+ Environment.NewLine +
@@ -137,7 +137,7 @@ namespace CocktailCookDrinks.Api.Controllers
                     "Muddle, shake, fine strain on crushed ice in a tiki mug. Optional: garnish with two pineapple leaves, orchid and tiki straw."
  });
                 this.db.Drinks.Add(new Drinks() {name = "Paid Vacation Days", type = "rum", image = 
-                    "HTTPS://HIPS.HEARSTAPPS.COM/HMG-PROD.S3.AMAZONAWS.COM/IMAGES/ATFOHNYC-0796-1491932215.JPG?CROP=0.447XW:1.00XH;0.366XW,0&RESIZE=980:*",
+                    "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/atfohnyc-0796-1491932215.jpg?crop=0.447xw:1.00xh;0.366xw,0&resize=*:2136",
                 recipe = "Ingredients:"+ Environment.NewLine +
                     "1.5 oz Don Q Rum"+ Environment.NewLine +
                     "1.5 oz pineapple juice"+ Environment.NewLine +
@@ -149,7 +149,7 @@ namespace CocktailCookDrinks.Api.Controllers
                     "Combine rum, pineapple, orange and hazelnut into a shaking tin. Fill halfway with ice and shake for 5 seconds. Strain into a Collins glass with ice. Top with club soda and garnish with a mint sprig."
  });
                 this.db.Drinks.Add(new Drinks() {name = "Boozy Affagato", type = "rum", image = 
-                    "HTTPS://HIPS.HEARSTAPPS.COM/TOC.H-CDN.CO/ASSETS/16/33/BOOZY-AFFOGATO-NAREN-YOUNG-CREDIT-STEVEN-FREIHON_1.JPG?CROP=0.512XW:0.638XH;0.231XW,0.362XH&RESIZE=980:*",
+                    "https://hips.hearstapps.com/toc.h-cdn.co/assets/16/33/boozy-affogato-naren-young-credit-steven-freihon_1.jpg?crop=0.512xw:0.638xh;0.231xw,0.362xh&resize=*:2136",
                recipe = "Ingredients:"+ Environment.NewLine +
                     ".5 oz Appleton Reserve rum"+ Environment.NewLine +
                     ".5 oz Fonseca LBV Port"+ Environment.NewLine +
@@ -186,7 +186,7 @@ namespace CocktailCookDrinks.Api.Controllers
                     "Shake all ingredients and serve in a rocks glass whose edge is half salted and garnished with mint leaves."
                      });
                 this.db.Drinks.Add(new Drinks() {name = "The Mystic Marvel", type = "tequila", image = 
-                    "https://hips.hearstapps.com/toc.h-cdn.co/assets/17/10/fishbowl-at-dream-midtowns-mystic-marvel-usd13.jpg?crop=1xw:0.9728301886792453xh;center,top&resize=980:",
+                    "https://hips.hearstapps.com/toc.h-cdn.co/assets/17/10/fishbowl-at-dream-midtowns-mystic-marvel-usd13.jpg?crop=1xw:0.9728301886792453xh;center,top&resize=*:2136",
                 recipe = "Ingredients"+ Environment.NewLine +
                    "1.5 oz Casamigos Tequila"+ Environment.NewLine +
                    "1 oz prickly pear purée"+ Environment.NewLine +
@@ -196,7 +196,7 @@ namespace CocktailCookDrinks.Api.Controllers
                     "Combine all ingredients in a shaker over ice and shake. Strain over fresh ice and garnish with a salt rim and lime."
  });
                 this.db.Drinks.Add(new Drinks() {name = "Blood Orange Margarita", type = "tequila", image = 
-                    "HTTPS://HIPS.HEARSTAPPS.COM/TOC.H-CDN.CO/ASSETS/17/10/BLOODORANGEMARGARITAJPG.JPEG?CROP=1.0XW:1XH;CENTER,TOP&RESIZE=980:*",
+                    "https://hips.hearstapps.com/toc.h-cdn.co/assets/17/10/bloodorangemargaritajpg.jpeg?crop=1.0xw:1xh;center,top&resize=*:2136",
                  recipe = "Ingredients"+ Environment.NewLine +
                     "1.5 oz Silver Tequila"+ Environment.NewLine +
                     ".5 oz Cointreau"+ Environment.NewLine +
