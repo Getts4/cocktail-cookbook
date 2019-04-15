@@ -1,0 +1,17 @@
+C:\Users\maxha\Desktop\AMIS3610\cocktail-cookbook\tests\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\maxha\Desktop\AMIS3610\cocktail-cookbook\tests\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\maxha\Desktop\AMIS3610\cocktail-cookbook\tests\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+C:\Users\maxha\Desktop\AMIS3610\cocktail-cookbook\tests\bin\Debug\netcoreapp2.2\CocktailCookbook.Api.Tests.deps.json
+C:\Users\maxha\Desktop\AMIS3610\cocktail-cookbook\tests\bin\Debug\netcoreapp2.2\CocktailCookbook.Api.Tests.runtimeconfig.json
+C:\Users\maxha\Desktop\AMIS3610\cocktail-cookbook\tests\bin\Debug\netcoreapp2.2\CocktailCookbook.Api.Tests.runtimeconfig.dev.json
+C:\Users\maxha\Desktop\AMIS3610\cocktail-cookbook\tests\bin\Debug\netcoreapp2.2\CocktailCookbook.Api.Tests.dll
+C:\Users\maxha\Desktop\AMIS3610\cocktail-cookbook\tests\bin\Debug\netcoreapp2.2\CocktailCookbook.Api.Tests.pdb
+C:\Users\maxha\Desktop\AMIS3610\cocktail-cookbook\tests\obj\Debug\netcoreapp2.2\CocktailCookbook.Api.Tests.csprojAssemblyReference.cache
+C:\Users\maxha\Desktop\AMIS3610\cocktail-cookbook\tests\obj\Debug\netcoreapp2.2\CocktailCookbook.Api.Tests.csproj.CoreCompileInputs.cache
+C:\Users\maxha\Desktop\AMIS3610\cocktail-cookbook\tests\obj\Debug\netcoreapp2.2\CocktailCookbook.Api.Tests.AssemblyInfoInputs.cache
+C:\Users\maxha\Desktop\AMIS3610\cocktail-cookbook\tests\obj\Debug\netcoreapp2.2\CocktailCookbook.Api.Tests.AssemblyInfo.cs
+C:\Users\maxha\Desktop\AMIS3610\cocktail-cookbook\tests\obj\Debug\netcoreapp2.2\CocktailCookbook.Api.Tests.dll
+C:\Users\maxha\Desktop\AMIS3610\cocktail-cookbook\tests\obj\Debug\netcoreapp2.2\CocktailCookbook.Api.Tests.pdb
+C:\Users\maxha\Desktop\AMIS3610\cocktail-cookbook\tests\bin\Debug\netcoreapp2.2\CocktailCookbook.Api.dll
+C:\Users\maxha\Desktop\AMIS3610\cocktail-cookbook\tests\bin\Debug\netcoreapp2.2\CocktailCookbook.Api.pdb
+C:\Users\maxha\Desktop\AMIS3610\cocktail-cookbook\tests\obj\Debug\netcoreapp2.2\CocktailCookbook.Api.Tests.csproj.CopyComplete
