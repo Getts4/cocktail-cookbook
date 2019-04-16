@@ -4,6 +4,10 @@ import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { catchError, map, tap } from 'rxjs/operators';
 
+const httpOptions = {
+  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+};
+
 @Injectable({
   providedIn: "root"
 })
@@ -11,14 +15,10 @@ export class DrinkService {
   constructor(
     private http: HttpClient
     ){}
-  /**
-   * Get all the drinks for a specific liquor
-   * @param {string} type - Liquor type for which we want drink list
-   */
   
-  //private drinksUrl = 'https://localhost:5001/api/drinks'; //use the API on the local machine
+  //private drinksUrl = 'https://localhost:5001/api/drinks'; //use the dotnet API on the local machine
   private drinksUrl = 'api/drinks'; //use the API within the angular project
-  //private drinksUrl = 'http://cocktail-cookbook-api-doey77.azurewebsites.net'; //use the API hosted on Azure
+  //private drinksUrl = 'http://cocktail-cookbook-api-doey77.azurewebsites.net'; //use the dotnet API hosted on Azure
   
  /**
   * @param operation - name of the operation that failed
@@ -48,6 +48,11 @@ export class DrinkService {
   rumDrinks: Drink[] = new Array();
   tequilaDrinks: Drink[] = new Array();  
 
+
+  /**
+   * Get all the drinks for a specific liquor
+   * @param {string} type - Liquor type for which we want drink list
+   */
   getDrinks(type: string): Drink[] {
     console.log(`Fetching data for ${type}...`);
 

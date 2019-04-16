@@ -25,7 +25,7 @@ export class DrinksComponent implements OnInit, OnDestroy {
     private drinkService: DrinkService
   ) {}
 
-  async ngOnInit() {
+  ngOnInit() {
     this.drinkService.getDbDrinks();
     this.drinkService.getArray();
     this.sub = this.route.params.subscribe(params => {

@@ -1,5 +1,4 @@
 import { InMemoryDbService } from 'angular-in-memory-web-api';
-import { Drink } from '../_models/drink.model';
 import { Injectable } from '@angular/core';
 
 @Injectable({
