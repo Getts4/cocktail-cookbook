@@ -17,6 +17,8 @@ import { NavComponent } from "./_components/nav/nav.component";
 import { DrinksComponent } from "./_pages/drinks/drinks.component";
 import { DrinkComponent } from "./_components/drink/drink.component";
 import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemDataService }  from './_services/in-mem-data.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,11 @@ import { HttpClientModule } from '@angular/common/http';
     MatGridListModule,
     MatIconModule,
     MatToolbarModule,
-    HttpClientModule
+    HttpClientModule,
+    //for testing with in-mem-data service
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemDataService, { dataEncapsulation: false }
+    )
   ],
   entryComponents: [DrinkComponent],
   providers: [],

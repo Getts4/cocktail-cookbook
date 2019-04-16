@@ -15,8 +15,15 @@ export class DrinkService {
    * Get all the drinks for a specific liquor
    * @param {string} type - Liquor type for which we want drink list
    */
-
-  private drinksUrl = 'https://localhost:5001/api/drinks';
+  
+  //private drinksUrl = 'https://localhost:5001/api/drinks'; //use the API on the local machine
+  private drinksUrl = 'api/drinks'; //use the API within the angular project
+  //private drinksUrl = 'http://cocktail-cookbook-api-doey77.azurewebsites.net'; //use the API hosted on Azure
+  
+ /**
+  * @param operation - name of the operation that failed
+  * @param result - optional value to return as the observable result
+  */
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
       console.error('${operation} failed: ${error.message}');
