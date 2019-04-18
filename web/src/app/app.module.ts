@@ -39,10 +39,14 @@ import { InMemDataService }  from './_services/in-mem-data.service';
     MatIconModule,
     MatToolbarModule,
     HttpClientModule,
+
     //for testing with in-mem-data service
+    /*
     HttpClientInMemoryWebApiModule.forRoot(
       InMemDataService, { dataEncapsulation: false }
     )
+    */
+
   ],
   entryComponents: [DrinkComponent],
   providers: [],

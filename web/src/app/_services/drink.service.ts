@@ -16,9 +16,14 @@ export class DrinkService {
     private http: HttpClient
     ){}
   
-  private drinksUrl = 'https://localhost:5001/api/drinks'; //use the dotnet API on the local machine
-  //private drinksUrl = 'api/drinks'; //use the API within the angular project
+  //select which URL to use for getting from API
+
+  private drinksUrl = 'http://localhost:5000/api/drinks'; //use the dotnet API on the local machine
   //private drinksUrl = 'http://cocktail-cookbook-api-doey77.azurewebsites.net'; //use the dotnet API hosted on Azure
+
+  //IMPORTANT: uncomment the import about in-mem-data service in /app/app.module.ts to use this
+  //private drinksUrl = 'api/drink'; //use the API within the angular project 
+
   
  /**
   * @param operation - name of the operation that failed

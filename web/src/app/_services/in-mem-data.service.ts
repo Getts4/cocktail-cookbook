@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 export class InMemDataService implements InMemoryDbService {
   createDb() {
     console.log("Creating database...")
-    const drinks = [
+    const drink = [
       {name: "Strawberry Basil Mule", type: "vodka", image: 
       "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/1552320409.png?crop=0.699xw:0.992xh;0.206xw,0.00817xh&resize=980:*",
   recipe: "Ingredients:" + "\n" +
@@ -191,6 +191,6 @@ recipe : "Ingredients:"+ "\n" +
                     "Fill a mixing tin with ice. Add all ingredients and shake vigorously. Empty shaker contents into a rocks glass with a salted rim. Garnish with a blood orange slice."
     }
     ]
-    return {drinks};
+    return {drink};
   }
 }
