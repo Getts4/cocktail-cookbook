@@ -3,7 +3,7 @@ AMIS 3610 SP19 Course Project
 By Joey David, Brendan Getts, Max McElligott, Max Harendza, Alex Paratore
 
 Azure:
-https://cocktaildoey77.z19.web.core.windows.net/landing
+http://cocktaildoey77.z19.web.core.windows.net/landing
 
 ### To run
 1) In a terminal, type 'git clone https://github.com/Getts4/cocktail-cookbook' into a workspace folder
