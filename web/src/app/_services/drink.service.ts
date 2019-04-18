@@ -16,8 +16,8 @@ export class DrinkService {
     private http: HttpClient
     ){}
   
-  //private drinksUrl = 'https://localhost:5001/api/drinks'; //use the dotnet API on the local machine
-  private drinksUrl = 'api/drinks'; //use the API within the angular project
+  private drinksUrl = 'https://localhost:5001/api/drinks'; //use the dotnet API on the local machine
+  //private drinksUrl = 'api/drinks'; //use the API within the angular project
   //private drinksUrl = 'http://cocktail-cookbook-api-doey77.azurewebsites.net'; //use the dotnet API hosted on Azure
   
  /**
